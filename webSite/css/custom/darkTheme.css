@@ -1,0 +1,42 @@
+.change-body {
+  background-image: radial-gradient(
+    circle,
+    #170d0c,
+    #160e13,
+    #121017,
+    #0b1318,
+    #081516
+  );
+  transition: 1s;
+}
+
+.change-color {
+  background: linear-gradient(to right, #cfcfcf, #aa8c8c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.change-ball1 {
+  background: linear-gradient(to top, #994b88 15%, #221a1a 70%);
+  background-size: 200% auto;
+  outline: 1px solid rgb(120, 120, 120);
+  outline-offset: 0.2rem;
+  transition: 0.5s;
+}
+
+.change-ball2 {
+  background: linear-gradient(to top, #2ac198 15%, #221a1a 60%);
+  background-size: 200% auto;
+  outline: 1px solid rgb(120, 120, 120);
+  outline-offset: 0.2rem;
+  transition: 0.5s;
+}
+
+.change-ball3 {
+  background: linear-gradient(to top, #0e30e1 15%, #221a1a 50%);
+  background-size: 200% auto;
+  outline: 1px solid rgb(120, 120, 120);
+  outline-offset: 0.2rem;
+  transition: 0.5s;
+}

@@ -1,0 +1,228 @@
+#portfolio {
+  padding-top: 5rem;
+}
+
+#portfolio .container .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolio .col-lg-4 {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+#portfolio .card {
+  perspective: 5000px;
+  background-color: #ffebee;
+  box-shadow: 5px 5px 10px 0px #ffebee, 5px 5px 10px 0px rgba(0, 0, 0, 0.75),
+    -2px -2px 5px 0px rgba(190, 190, 190, 0.5);
+  outline: 1px solid #929292;
+  outline-offset: 1rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 50px;
+  max-width: 400px;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ff6890;
+  opacity: 0;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5),
+    5px 5px 15px 0px rgba(160, 160, 160, 0.5);
+}
+
+#portfolio .card:hover .layer {
+  animation: layer-in 0.8s ease-in-out forwards;
+  z-index: 99;
+}
+
+@keyframes layer-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  100% {
+    opacity: 0.7;
+    transform: scale(0.75);
+  }
+}
+
+#portfolio .card .image-3d {
+  width: 100%;
+  transform: rotateX(70deg) rotateZ(-60deg) translate3d(0px, 0px, 0px);
+  box-shadow: inset -5px 5px 15px 5px rgba(0, 0, 0, 0.4),
+    -80px 40px 15px 5px rgba(0, 0, 0, 0.4);
+  transition: all 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+#portfolio .card:hover .image-3d {
+  transform: rotateX(0deg) rotateZ(0) translate3d(0px, 0px, 400px);
+  box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+#portfolio .card:hover .image-3d img {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+    translate3d(0px, 0px, -300px) scale(0.95);
+}
+
+#portfolio .card .image-3d .img-music {
+  transform: rotateX(-88deg) rotateY(-50deg) rotateZ(-2deg) skewY(5deg)
+    translate3d(0px, -15px, -40px);
+  transition: all 0.8s;
+  transform-style: preserve-3d;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+#portfolio .card .image-3d .img-ball {
+  transform: rotateX(-65deg) rotateY(-25deg) rotateZ(55deg) skewY(-5deg)
+    scale(0.9) translate3d(-50px, -20px, 40px);
+  transition: all 0.8s;
+  transform-style: preserve-3d;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+#portfolio .card .image-3d .img-puzzle {
+  transform: rotateX(-75deg) rotateY(-25deg) rotateZ(45deg) skewY(-5deg)
+    translate3d(-50px, -20px, 50px);
+  transition: all 0.8s;
+  transform-style: preserve-3d;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+#portfolio .card .image-3d .img-rocket {
+  transform: rotateX(-40deg) rotateY(-45deg) rotateZ(45deg) skewY(-5deg)
+    scale(1.1) translate3d(5px, -60px, -20px);
+  transition: all 0.8s;
+  transform-style: preserve-3d;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+#portfolio .card .image-3d .img-yeti {
+  transform: rotateX(-38deg) rotateY(-50deg) rotateZ(45deg) skewY(-5deg)
+    translate3d(0px, -30px, 30px);
+  transition: all 0.8s;
+  transform-style: preserve-3d;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+#portfolio .card .image-3d .img-map {
+  transform: rotateX(-38deg) rotateY(-45deg) rotateZ(45deg) skewY(-4deg)
+    translate3d(-15px, -30px, 80px);
+  transition: all 0.8s;
+  transform-style: preserve-3d;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+.layer .modal-links {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layer .modal-links a {
+  padding: 1rem;
+  background-color: #f7d650;
+  border-radius: 10px;
+  margin: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.layer .modal-links a:first-child {
+  background-color: #1ab394;
+}
+
+.layer .modal-links a:last-child {
+  cursor: zoom-in;
+}
+
+.layer h5 {
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) and (max-width: 992.9px) {
+  .layer .modal-links {
+    margin-bottom: 0;
+  }
+
+  .layer .modal-links a {
+    padding: 0.75rem;
+    font-size: 14px;
+  }
+
+  .layer h5 {
+    font-size: 18px;
+  }
+}
+
+.projects {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.projects .modal-dialog {
+  max-width: 100vh;
+}
+
+.projects .modal-content {
+  background-color: rgba(8, 21, 22, 0.8);
+  color: #d2d2d2;
+}
+
+.project-img {
+  border: 1px solid wheat;
+  outline: 1px groove white;
+  outline-offset: 1rem;
+  margin-top: 1rem;
+  border-radius: 50%;
+  padding: 1rem;
+  box-shadow: 0px 0px 15px 0px #eed4d8, 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+.project-img:hover {
+  transform: scale(1.015);
+}
+
+.images .modal-dialog {
+  max-width: 50vh;
+}
+
+.images .modal-content {
+  background-color: transparent;
+  border: none;
+}
+
+.show-img {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}

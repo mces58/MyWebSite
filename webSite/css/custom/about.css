@@ -1,0 +1,177 @@
+#about {
+  padding-top: 5rem;
+}
+
+.about-me {
+  box-shadow: none;
+  border-radius: none;
+  margin-left: none;
+}
+
+@media (min-width: 1199.8px) {
+  .about-me {
+    box-shadow: -5px -5px 10px 2px #eed4d8,
+      5px 5px 15px 2px rgba(80, 80, 80, 0.5);
+    border-radius: 55px;
+    margin-left: 1rem;
+    padding: 10px;
+  }
+}
+
+#about-image {
+  box-shadow: 5px 5px 10px 2px #eed4d8, 10px 10px 20px -5px rgba(0, 0, 0, 0.75);
+  border-radius: 55px;
+}
+
+@keyframes kenarlik-animasyonu {
+  0% {
+    border-image-source: linear-gradient(90deg, red, blue);
+  }
+  100% {
+    border-image-source: linear-gradient(90deg, blue, red);
+  }
+}
+
+.font-family-header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  background: linear-gradient(
+    to right,
+    #9127a3,
+    #cb1189,
+    #ef2c69,
+    #fe5a48,
+    #fb8828,
+    #dfa313,
+    #bdb926,
+    #98cb4d,
+    #63cc77,
+    #24c99e,
+    #00c3bc,
+    #26bacd
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.font-family-body {
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.about-text {
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+}
+
+.about-text span {
+  font-weight: 300;
+}
+
+.btn-about {
+  border: none;
+  box-shadow: none;
+  line-height: 42px;
+  position: relative;
+  left: -50%;
+  top: -10px;
+}
+.btn-about span {
+  background: rgb(0, 172, 238);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 172, 238, 1) 0%,
+    rgba(2, 126, 251, 1) 100%
+  );
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+.btn-about span:nth-child(1) {
+  transform: rotateX(90deg);
+  transform-origin: 50% 50% -20px;
+}
+
+.btn-about span:nth-child(2) {
+  transform: rotateX(0deg);
+  transform-origin: 50% 50% -20px;
+}
+
+.btn-about:hover span:nth-child(1) {
+  transform: rotateX(0deg);
+}
+
+.btn-about:hover span:nth-child(2) {
+  transform: rotateX(-90deg);
+}
+
+.skill {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.skill p {
+  font-size: 2rem;
+  margin: 0.5rem 0rem;
+  padding: 0;
+  color: #1e3050;
+}
+
+.skill .progress-shadow {
+  background-color: #b3b3b3;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5),
+    10px 10px 15px 0px rgba(255, 255, 255, 1);
+  height: 20px;
+  border-radius: 10px;
+}
+
+.skill .progress .progress-bar {
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.skill #html {
+  background-color: #f2595b;
+  width: 85%;
+}
+
+.skill #css {
+  background-color: #b621fe;
+  width: 75%;
+}
+
+.skill #js {
+  background-color: rgba(255, 151, 0, 1);
+  width: 70%;
+}
+
+.skill #bootstrap {
+  background-color: #008fdb;
+  width: 80%;
+}
+
+.skill #angular {
+  background-color: #facf1e;
+  width: 50%;
+}
+
+.skill #react {
+  background-color: #07a899;
+  width: 40%;
+}
+
+.skill span {
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+}
