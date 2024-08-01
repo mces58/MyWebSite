@@ -27,5 +27,5 @@
 </div>
 <hr>
 
-<h2 align="center">My Web Site</h2>
-<div align="center"><a href="https://mces58.github.io/MyWebSite/webSite/index.html">Click here to view the site</a></div>
+<h2 align="center">My Web Site Version 1</h2>
+<div align="center"><a href="https://mywebsite-lu6c.onrender.com">Click here to view the site</a></div>
