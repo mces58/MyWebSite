@@ -15,11 +15,10 @@
   "importOrder": [
     "^react",
     "<THIRD_PARTY_MODULES>",
-    "^src/(.*)$",
+    "^@/(.*)$",
     "^(.*)/(?!generated)(.*)/(.*)$",
     "^(.*)/generated/(.*)$",
-    "^[./]",
-    "^@fontsource/(.*)$"
+    "^[./]"
   ],
   "plugins": ["@trivago/prettier-plugin-sort-imports"]
 }
