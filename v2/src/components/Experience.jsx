@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 
 import ExperienceCard from '@/components/ExperienceCard';
 import { experiences } from '@/constants';
+import SectionWrapper from '@/hoc/SectionWrapper';
 import { styles } from '@/styles';
 import { textVariant } from '@/utils/motion';
 
@@ -27,4 +28,6 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+const WrappedExperience = SectionWrapper(Experience, 'work');
+
+export default WrappedExperience;
