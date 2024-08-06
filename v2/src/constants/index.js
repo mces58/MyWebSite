@@ -23,7 +23,7 @@ import {
   tripguide,
   typescript,
   web,
-} from '../assets';
+} from '@/assets';
 
 export const navLinks = [
   {
