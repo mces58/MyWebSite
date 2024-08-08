@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 
 import FeedbackCard from '@/components/FeedbackCard';
 import { testimonials } from '@/constants';
+import SectionWrapper from '@/hoc/SectionWrapper';
 import { styles } from '@/styles';
 import { textVariant } from '@/utils/motion';
 
@@ -23,4 +24,6 @@ const Feedbacks = () => {
   );
 };
 
-export default Feedbacks;
+const WrappedFeedbacks = SectionWrapper(Feedbacks, '');
+
+export default WrappedFeedbacks;
